@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build-deb.sh" />
+    <None Include="debian\changelog" />
+    <None Include="debian\changelog.in" />
+    <None Include="debian\compat" />
+    <None Include="debian\config" />
+    <None Include="debian\control" />
+    <None Include="debian\copyright" />
+    <None Include="debian\dkms-sign-module" />
+    <None Include="debian\one-time-setup" />
+    <None Include="debian\rtl8814au-dkms.dkms" />
+    <None Include="debian\rules" />
+    <None Include="debian\sign-modules" />
+    <None Include="debian\templates" />
+    <None Include="dkms.conf" />
+    <None Include="hal\phydm\ap_makefile.mk" />
+    <None Include="hal\phydm\phydm.mk" />
+    <None Include="hal\phydm\sd4_phydm_2_kernel.mk" />
+    <None Include="Kconfig" />
+    <None Include="LICENSE" />
+    <None Include="Makefile" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\efuse\rtw_efuse.c" />
+    <ClCompile Include="core\mesh\rtw_mesh.c" />
+    <ClCompile Include="core\mesh\rtw_mesh_hwmp.c" />
+    <ClCompile Include="core\mesh\rtw_mesh_pathtbl.c" />
+    <ClCompile Include="core\rtw_ap.c" />
+    <ClCompile Include="core\rtw_beamforming.c" />
+    <ClCompile Include="core\rtw_br_ext.c" />
+    <ClCompile Include="core\rtw_btcoex.c" />
+    <ClCompile Include="core\rtw_btcoex_wifionly.c" />
+    <None Include="core\rtw_chplan.c" />
+    <ClCompile Include="core\rtw_cmd.c" />
+    <ClCompile Include="core\rtw_debug.c" />
+    <ClCompile Include="core\rtw_ieee80211.c" />
+    <ClCompile Include="core\rtw_io.c" />
+    <ClCompile Include="core\rtw_ioctl_query.c" />
+    <ClCompile Include="core\rtw_ioctl_set.c" />
+    <ClCompile Include="core\rtw_iol.c" />
+    <ClCompile Include="core\rtw_mi.c" />
+    <ClCompile Include="core\rtw_mlme.c" />
+    <ClCompile Include="core\rtw_mlme_ext.c" />
+    <ClCompile Include="core\rtw_mp.c" />
+    <ClCompile Include="core\rtw_odm.c" />
+    <ClCompile Include="core\rtw_p2p.c" />
+    <ClCompile Include="core\rtw_pwrctrl.c" />
+    <ClCompile Include="core\rtw_recv.c" />
+    <ClCompile Include="core\rtw_rf.c" />
+    <ClCompile Include="core\rtw_rm.c" />
+    <ClCompile Include="core\rtw_rm_fsm.c" />
+    <ClCompile Include="core\rtw_rm_util.c" />
+    <ClCompile Include="core\rtw_rson.c" />
+    <ClCompile Include="core\rtw_security.c" />
+    <ClCompile Include="core\rtw_sreset.c" />
+    <ClCompile Include="core\rtw_sta_mgt.c" />
+    <ClCompile Include="core\rtw_tdls.c" />
+    <ClCompile Include="core\rtw_vht.c" />
+    <ClCompile Include="core\rtw_wlan_util.c" />
+    <ClCompile Include="core\rtw_xmit.c" />
+    <ClCompile Include="hal\efuse\rtl8814a\HalEfuseMask8814A_USB.c" />
+    <ClCompile Include="hal\HalPwrSeqCmd.c" />
+    <ClCompile Include="hal\hal_btcoex.c" />
+    <ClCompile Include="hal\hal_btcoex_wifionly.c" />
+    <ClCompile Include="hal\hal_com.c" />
+    <ClCompile Include="hal\hal_com_phycfg.c" />
+    <ClCompile Include="hal\hal_dm.c" />
+    <ClCompile Include="hal\hal_dm_acs.c" />
+    <ClCompile Include="hal\hal_hci\hal_usb.c" />
+    <ClCompile Include="hal\hal_intf.c" />
+    <ClCompile Include="hal\hal_mcc.c" />
+    <ClCompile Include="hal\hal_mp.c" />
+    <ClCompile Include="hal\hal_phy.c" />
+    <ClCompile Include="hal\led\hal_led.c" />
+    <ClCompile Include="hal\led\hal_usb_led.c" />
+    <ClCompile Include="hal\phydm\halrf\halphyrf_ce.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf_debug.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf_kfree.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf_powertracking.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf_powertracking_ce.c" />
+    <ClCompile Include="hal\phydm\halrf\halrf_psd.c" />
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halhwimg8814a_rf.c" />
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ce.c" />
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halrf_iqk_8814a.c" />
+    <ClCompile Include="hal\phydm\phydm.c" />
+    <ClCompile Include="hal\phydm\phydm_adaptivity.c" />
+    <ClCompile Include="hal\phydm\phydm_adc_sampling.c" />
+    <ClCompile Include="hal\phydm\phydm_antdect.c" />
+    <ClCompile Include="hal\phydm\phydm_antdiv.c" />
+    <ClCompile Include="hal\phydm\phydm_api.c" />
+    <ClCompile Include="hal\phydm\phydm_auto_dbg.c" />
+    <ClCompile Include="hal\phydm\phydm_beamforming.c" />
+    <ClCompile Include="hal\phydm\phydm_cck_pd.c" />
+    <ClCompile Include="hal\phydm\phydm_cck_rx_pathdiv.c" />
+    <ClCompile Include="hal\phydm\phydm_ccx.c" />
+    <ClCompile Include="hal\phydm\phydm_cfotracking.c" />
+    <ClCompile Include="hal\phydm\phydm_debug.c" />
+    <ClCompile Include="hal\phydm\phydm_dfs.c" />
+    <ClCompile Include="hal\phydm\phydm_dig.c" />
+    <ClCompile Include="hal\phydm\phydm_direct_bf.c" />
+    <ClCompile Include="hal\phydm\phydm_dynamictxpower.c" />
+    <ClCompile Include="hal\phydm\phydm_hwconfig.c" />
+    <ClCompile Include="hal\phydm\phydm_interface.c" />
+    <ClCompile Include="hal\phydm\phydm_lna_sat.c" />
+    <ClCompile Include="hal\phydm\phydm_math_lib.c" />
+    <ClCompile Include="hal\phydm\phydm_mp.c" />
+    <ClCompile Include="hal\phydm\phydm_noisemonitor.c" />
+    <ClCompile Include="hal\phydm\phydm_pathdiv.c" />
+    <ClCompile Include="hal\phydm\phydm_phystatus.c" />
+    <ClCompile Include="hal\phydm\phydm_pmac_tx_setting.c" />
+    <ClCompile Include="hal\phydm\phydm_pow_train.c" />
+    <ClCompile Include="hal\phydm\phydm_primary_cca.c" />
+    <ClCompile Include="hal\phydm\phydm_psd.c" />
+    <ClCompile Include="hal\phydm\phydm_rainfo.c" />
+    <ClCompile Include="hal\phydm\phydm_rssi_monitor.c" />
+    <ClCompile Include="hal\phydm\phydm_smt_ant.c" />
+    <ClCompile Include="hal\phydm\phydm_soml.c" />
+    <ClCompile Include="hal\phydm\rtl8814a\halhwimg8814a_bb.c" />
+    <ClCompile Include="hal\phydm\rtl8814a\halhwimg8814a_mac.c" />
+    <ClCompile Include="hal\phydm\rtl8814a\phydm_regconfig8814a.c" />
+    <ClCompile Include="hal\phydm\rtl8814a\phydm_rtl8814a.c" />
+    <ClCompile Include="hal\phydm\txbf\halcomtxbf.c" />
+    <ClCompile Include="hal\phydm\txbf\haltxbf8814a.c" />
+    <ClCompile Include="hal\phydm\txbf\haltxbfinterface.c" />
+    <ClCompile Include="hal\phydm\txbf\phydm_hal_txbf_api.c" />
+    <ClCompile Include="hal\rtl8814a\hal8814a_fw.c" />
+    <ClCompile Include="hal\rtl8814a\Hal8814PwrSeq.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_cmd.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_dm.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_hal_init.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_phycfg.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_rf6052.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_rxdesc.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_sreset.c" />
+    <ClCompile Include="hal\rtl8814a\rtl8814a_xmit.c" />
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_led.c" />
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_recv.c" />
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_xmit.c" />
+    <ClCompile Include="hal\rtl8814a\usb\usb_halinit.c" />
+    <ClCompile Include="hal\rtl8814a\usb\usb_ops_linux.c" />
+    <ClCompile Include="os_dep\linux\ioctl_cfg80211.c" />
+    <ClCompile Include="os_dep\linux\ioctl_linux.c" />
+    <ClCompile Include="os_dep\linux\ioctl_mp.c" />
+    <ClCompile Include="os_dep\linux\mlme_linux.c" />
+    <ClCompile Include="os_dep\linux\os_intfs.c" />
+    <ClCompile Include="os_dep\linux\recv_linux.c" />
+    <ClCompile Include="os_dep\linux\rtw_android.c" />
+    <ClCompile Include="os_dep\linux\rtw_cfgvendor.c" />
+    <ClCompile Include="os_dep\linux\rtw_proc.c" />
+    <ClCompile Include="os_dep\linux\rtw_rhashtable.c" />
+    <ClCompile Include="os_dep\linux\usb_intf.c" />
+    <ClCompile Include="os_dep\linux\usb_ops_linux.c" />
+    <ClCompile Include="os_dep\linux\wifi_regd.c" />
+    <ClCompile Include="os_dep\linux\xmit_linux.c" />
+    <ClCompile Include="os_dep\osdep_service.c" />
+    <ClCompile Include="platform\platform_ops.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\mesh\rtw_mesh.h" />
+    <ClInclude Include="core\mesh\rtw_mesh_hwmp.h" />
+    <ClInclude Include="core\mesh\rtw_mesh_pathtbl.h" />
+    <ClInclude Include="core\rtw_chplan.h" />
+    <ClInclude Include="hal\efuse\efuse_mask.h" />
+    <ClInclude Include="hal\efuse\rtl8814a\HalEfuseMask8814A_PCIE.h" />
+    <ClInclude Include="hal\efuse\rtl8814a\HalEfuseMask8814A_USB.h" />
+    <ClInclude Include="hal\hal_com_c2h.h" />
+    <ClInclude Include="hal\hal_dm.h" />
+    <ClInclude Include="hal\hal_dm_acs.h" />
+    <ClInclude Include="hal\hal_halmac.h" />
+    <ClInclude Include="hal\phydm\halrf\halphyrf_ap.h" />
+    <ClInclude Include="hal\phydm\halrf\halphyrf_ce.h" />
+    <ClInclude Include="hal\phydm\halrf\halphyrf_iot.h" />
+    <ClInclude Include="hal\phydm\halrf\halphyrf_win.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_debug.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_dpk.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_features.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_iqk.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_kfree.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_ap.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_ce.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_iot.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_win.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_psd.h" />
+    <ClInclude Include="hal\phydm\halrf\halrf_txgapcal.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halhwimg8814a_rf.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ap.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ce.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_win.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_iqk_8814a.h" />
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\version_rtl8814a_rf.h" />
+    <ClInclude Include="hal\phydm\mp_precomp.h" />
+    <ClInclude Include="hal\phydm\phydm.h" />
+    <ClInclude Include="hal\phydm\phydm_adaptivity.h" />
+    <ClInclude Include="hal\phydm\phydm_adc_sampling.h" />
+    <ClInclude Include="hal\phydm\phydm_antdect.h" />
+    <ClInclude Include="hal\phydm\phydm_antdiv.h" />
+    <ClInclude Include="hal\phydm\phydm_api.h" />
+    <ClInclude Include="hal\phydm\phydm_auto_dbg.h" />
+    <ClInclude Include="hal\phydm\phydm_beamforming.h" />
+    <ClInclude Include="hal\phydm\phydm_cck_pd.h" />
+    <ClInclude Include="hal\phydm\phydm_cck_rx_pathdiv.h" />
+    <ClInclude Include="hal\phydm\phydm_ccx.h" />
+    <ClInclude Include="hal\phydm\phydm_cfotracking.h" />
+    <ClInclude Include="hal\phydm\phydm_debug.h" />
+    <ClInclude Include="hal\phydm\phydm_dfs.h" />
+    <ClInclude Include="hal\phydm\phydm_dig.h" />
+    <ClInclude Include="hal\phydm\phydm_direct_bf.h" />
+    <ClInclude Include="hal\phydm\phydm_dynamictxpower.h" />
+    <ClInclude Include="hal\phydm\phydm_features.h" />
+    <ClInclude Include="hal\phydm\phydm_features_ap.h" />
+    <ClInclude Include="hal\phydm\phydm_features_ce.h" />
+    <ClInclude Include="hal\phydm\phydm_features_iot.h" />
+    <ClInclude Include="hal\phydm\phydm_features_win.h" />
+    <ClInclude Include="hal\phydm\phydm_hwconfig.h" />
+    <ClInclude Include="hal\phydm\phydm_interface.h" />
+    <ClInclude Include="hal\phydm\phydm_lna_sat.h" />
+    <ClInclude Include="hal\phydm\phydm_math_lib.h" />
+    <ClInclude Include="hal\phydm\phydm_mp.h" />
+    <ClInclude Include="hal\phydm\phydm_noisemonitor.h" />
+    <ClInclude Include="hal\phydm\phydm_pathdiv.h" />
+    <ClInclude Include="hal\phydm\phydm_phystatus.h" />
+    <ClInclude Include="hal\phydm\phydm_pmac_tx_setting.h" />
+    <ClInclude Include="hal\phydm\phydm_pow_train.h" />
+    <ClInclude Include="hal\phydm\phydm_precomp.h" />
+    <ClInclude Include="hal\phydm\phydm_pre_define.h" />
+    <ClInclude Include="hal\phydm\phydm_primary_cca.h" />
+    <ClInclude Include="hal\phydm\phydm_psd.h" />
+    <ClInclude Include="hal\phydm\phydm_rainfo.h" />
+    <ClInclude Include="hal\phydm\phydm_reg.h" />
+    <ClInclude Include="hal\phydm\phydm_regdefine11ac.h" />
+    <ClInclude Include="hal\phydm\phydm_regdefine11n.h" />
+    <ClInclude Include="hal\phydm\phydm_regtable.h" />
+    <ClInclude Include="hal\phydm\phydm_rssi_monitor.h" />
+    <ClInclude Include="hal\phydm\phydm_smt_ant.h" />
+    <ClInclude Include="hal\phydm\phydm_soml.h" />
+    <ClInclude Include="hal\phydm\phydm_types.h" />
+    <ClInclude Include="hal\phydm\rtl8814a\halhwimg8814a_bb.h" />
+    <ClInclude Include="hal\phydm\rtl8814a\halhwimg8814a_mac.h" />
+    <ClInclude Include="hal\phydm\rtl8814a\phydm_regconfig8814a.h" />
+    <ClInclude Include="hal\phydm\rtl8814a\phydm_rtl8814a.h" />
+    <ClInclude Include="hal\phydm\rtl8814a\version_rtl8814a.h" />
+    <ClInclude Include="hal\phydm\txbf\halcomtxbf.h" />
+    <ClInclude Include="hal\phydm\txbf\haltxbf8192e.h" />
+    <ClInclude Include="hal\phydm\txbf\haltxbf8814a.h" />
+    <ClInclude Include="hal\phydm\txbf\haltxbf8822b.h" />
+    <ClInclude Include="hal\phydm\txbf\haltxbfinterface.h" />
+    <ClInclude Include="hal\phydm\txbf\haltxbfjaguar.h" />
+    <ClInclude Include="hal\phydm\txbf\phydm_hal_txbf_api.h" />
+    <ClInclude Include="hal\rtl8814a\hal8814a_fw.h" />
+    <ClInclude Include="include\basic_types.h" />
+    <ClInclude Include="include\byteorder\big_endian.h" />
+    <ClInclude Include="include\byteorder\generic.h" />
+    <ClInclude Include="include\byteorder\little_endian.h" />
+    <ClInclude Include="include\byteorder\swab.h" />
+    <ClInclude Include="include\circ_buf.h" />
+    <ClInclude Include="include\cmd_osdep.h" />
+    <ClInclude Include="include\cmn_info\rtw_sta_info.h" />
+    <ClInclude Include="include\custom_gpio.h" />
+    <ClInclude Include="include\drv_conf.h" />
+    <ClInclude Include="include\drv_types.h" />
+    <ClInclude Include="include\drv_types_ce.h" />
+    <ClInclude Include="include\drv_types_gspi.h" />
+    <ClInclude Include="include\drv_types_linux.h" />
+    <ClInclude Include="include\drv_types_pci.h" />
+    <ClInclude Include="include\drv_types_sdio.h" />
+    <ClInclude Include="include\drv_types_xp.h" />
+    <ClInclude Include="include\ethernet.h" />
+    <ClInclude Include="include\gspi_hal.h" />
+    <ClInclude Include="include\gspi_ops.h" />
+    <ClInclude Include="include\gspi_osintf.h" />
+    <ClInclude Include="include\h2clbk.h" />
+    <ClInclude Include="include\Hal8814PhyCfg.h" />
+    <ClInclude Include="include\Hal8814PhyReg.h" />
+    <ClInclude Include="include\Hal8814PwrSeq.h" />
+    <ClInclude Include="include\HalPwrSeqCmd.h" />
+    <ClInclude Include="include\HalVerDef.h" />
+    <ClInclude Include="include\hal_btcoex.h" />
+    <ClInclude Include="include\hal_btcoex_wifionly.h" />
+    <ClInclude Include="include\hal_com.h" />
+    <ClInclude Include="include\hal_com_h2c.h" />
+    <ClInclude Include="include\hal_com_led.h" />
+    <ClInclude Include="include\hal_com_phycfg.h" />
+    <ClInclude Include="include\hal_com_reg.h" />
+    <ClInclude Include="include\hal_data.h" />
+    <ClInclude Include="include\hal_gspi.h" />
+    <ClInclude Include="include\hal_ic_cfg.h" />
+    <ClInclude Include="include\hal_intf.h" />
+    <ClInclude Include="include\hal_pg.h" />
+    <ClInclude Include="include\hal_phy.h" />
+    <ClInclude Include="include\hal_phy_reg.h" />
+    <ClInclude Include="include\hal_sdio.h" />
+    <ClInclude Include="include\hal_sdio_coex.h" />
+    <ClInclude Include="include\ieee80211.h" />
+    <ClInclude Include="include\if_ether.h" />
+    <ClInclude Include="include\ip.h" />
+    <ClInclude Include="include\mlme_osdep.h" />
+    <ClInclude Include="include\osdep_intf.h" />
+    <ClInclude Include="include\osdep_service.h" />
+    <ClInclude Include="include\osdep_service_bsd.h" />
+    <ClInclude Include="include\osdep_service_ce.h" />
+    <ClInclude Include="include\osdep_service_linux.h" />
+    <ClInclude Include="include\osdep_service_xp.h" />
+    <ClInclude Include="include\pci_hal.h" />
+    <ClInclude Include="include\pci_ops.h" />
+    <ClInclude Include="include\pci_osintf.h" />
+    <ClInclude Include="include\recv_osdep.h" />
+    <ClInclude Include="include\rtl8814a_cmd.h" />
+    <ClInclude Include="include\rtl8814a_dm.h" />
+    <ClInclude Include="include\rtl8814a_hal.h" />
+    <ClInclude Include="include\rtl8814a_led.h" />
+    <ClInclude Include="include\rtl8814a_recv.h" />
+    <ClInclude Include="include\rtl8814a_rf.h" />
+    <ClInclude Include="include\rtl8814a_spec.h" />
+    <ClInclude Include="include\rtl8814a_sreset.h" />
+    <ClInclude Include="include\rtl8814a_xmit.h" />
+    <ClInclude Include="include\rtl8814be_hal.h" />
+    <ClInclude Include="include\rtl8814bu_hal.h" />
+    <ClInclude Include="include\rtl8814b_hal.h" />
+    <ClInclude Include="include\rtl_autoconf.h" />
+    <ClInclude Include="include\rtw_android.h" />
+    <ClInclude Include="include\rtw_ap.h" />
+    <ClInclude Include="include\rtw_beamforming.h" />
+    <ClInclude Include="include\rtw_br_ext.h" />
+    <ClInclude Include="include\rtw_btcoex.h" />
+    <ClInclude Include="include\rtw_btcoex_wifionly.h" />
+    <ClInclude Include="include\rtw_byteorder.h" />
+    <ClInclude Include="include\rtw_cmd.h" />
+    <ClInclude Include="include\rtw_debug.h" />
+    <ClInclude Include="include\rtw_eeprom.h" />
+    <ClInclude Include="include\rtw_efuse.h" />
+    <ClInclude Include="include\rtw_event.h" />
+    <ClInclude Include="include\rtw_ht.h" />
+    <ClInclude Include="include\rtw_io.h" />
+    <ClInclude Include="include\rtw_ioctl.h" />
+    <ClInclude Include="include\rtw_ioctl_query.h" />
+    <ClInclude Include="include\rtw_ioctl_set.h" />
+    <ClInclude Include="include\rtw_iol.h" />
+    <ClInclude Include="include\rtw_mcc.h" />
+    <ClInclude Include="include\rtw_mem.h" />
+    <ClInclude Include="include\rtw_mi.h" />
+    <ClInclude Include="include\rtw_mlme.h" />
+    <ClInclude Include="include\rtw_mlme_ext.h" />
+    <ClInclude Include="include\rtw_mp.h" />
+    <ClInclude Include="include\rtw_odm.h" />
+    <ClInclude Include="include\rtw_p2p.h" />
+    <ClInclude Include="include\rtw_pwrctrl.h" />
+    <ClInclude Include="include\rtw_qos.h" />
+    <ClInclude Include="include\rtw_recv.h" />
+    <ClInclude Include="include\rtw_rf.h" />
+    <ClInclude Include="include\rtw_rm.h" />
+    <ClInclude Include="include\rtw_rm_fsm.h" />
+    <ClInclude Include="include\rtw_rm_util.h" />
+    <ClInclude Include="include\rtw_rson.h" />
+    <ClInclude Include="include\rtw_security.h" />
+    <ClInclude Include="include\rtw_sreset.h" />
+    <ClInclude Include="include\rtw_tdls.h" />
+    <ClInclude Include="include\rtw_version.h" />
+    <ClInclude Include="include\rtw_vht.h" />
+    <ClInclude Include="include\rtw_wapi.h" />
+    <ClInclude Include="include\rtw_wifi_regd.h" />
+    <ClInclude Include="include\rtw_xmit.h" />
+    <ClInclude Include="include\sdio_ops_linux.h" />
+    <ClInclude Include="include\sdio_osintf.h" />
+    <ClInclude Include="include\sta_info.h" />
+    <ClInclude Include="include\usb_hal.h" />
+    <ClInclude Include="include\usb_ops.h" />
+    <ClInclude Include="include\usb_ops_linux.h" />
+    <ClInclude Include="include\usb_osintf.h" />
+    <ClInclude Include="include\usb_vendor_req.h" />
+    <ClInclude Include="include\wifi.h" />
+    <ClInclude Include="include\wlan_bssdef.h" />
+    <ClInclude Include="include\xmit_osdep.h" />
+    <ClInclude Include="os_dep\linux\ioctl_cfg80211.h" />
+    <ClInclude Include="os_dep\linux\rhashtable.h" />
+    <ClInclude Include="os_dep\linux\rtw_cfgvendor.h" />
+    <ClInclude Include="os_dep\linux\rtw_proc.h" />
+    <ClInclude Include="os_dep\linux\rtw_rhashtable.h" />
+    <ClInclude Include="platform\custom_country_chplan.h" />
+    <ClInclude Include="platform\platform_ops.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="platform\platform_zte_zx296716_sdio.h" />
+    <None Include="hal\phydm\halhwimg.h" />
+    <None Include="hal\phydm\phydm_features_ce2_kernel.h" />
+    <None Include="hal\phydm\phydm_powertracking_ap.h" />
+    <None Include="hal\phydm\phydm_powertracking_ce.h" />
+    <None Include="hal\phydm\phydm_powertracking_win.h" />
+    <None Include="hal\phydm\rtl8814a\hal8814areg_odm.h" />
+    <None Include="include\byteorder\swabb.h" />
+    <None Include="include\gspi_ops_linux.h" />
+    <None Include="include\ieee80211_ext.h" />
+    <None Include="include\linux\wireless.h" />
+    <None Include="include\mp_custom_oid.h" />
+    <None Include="include\nic_spec.h" />
+    <None Include="include\rtw_bt_mp.h" />
+    <None Include="include\rtw_mp_phy_regdef.h" />
+    <None Include="include\rtw_sdio.h" />
+    <None Include="include\sdio_hal.h" />
+    <None Include="include\sdio_ops.h" />
+    <None Include="include\sdio_ops_ce.h" />
+    <None Include="include\sdio_ops_xp.h" />
+    <None Include="include\version_build.h" />
+    <None Include="platform\platform_aml_s905_sdio.h" />
+    <None Include="platform\platform_hisilicon_hi3798_sdio.h" />
+    <None Include="platform\platform_ARM_SUN50IW1P1_sdio.c" />
+    <None Include="platform\platform_ARM_SUNnI_sdio.c" />
+    <None Include="platform\platform_ARM_SUNxI_sdio.c" />
+    <None Include="platform\platform_ARM_SUNxI_usb.c" />
+    <None Include="platform\platform_ARM_WMT_sdio.c" />
+    <None Include="platform\platform_RTK_DMP_usb.c" />
+    <None Include="platform\platform_aml_s905_sdio.c" />
+    <None Include="platform\platform_arm_act_sdio.c" />
+    <None Include="platform\platform_hisilicon_hi3798_sdio.c" />
+    <None Include="platform\platform_sprd_sdio.c" />
+    <None Include="platform\platform_zte_zx296716_sdio.c" />
+    <None Include="core\rtw_bt_mp.c" />
+    <None Include="core\rtw_eeprom.c" />
+    <None Include="core\rtw_mem.c" />
+    <None Include="core\rtw_sdio.c" />
+    <None Include="core\rtw_wapi.c" />
+    <None Include="core\rtw_wapi_sms4.c" />
+    <None Include="hal\efuse\rtl8814a\HalEfuseMask8814A_PCIE.c" />
+    <None Include="hal\hal_halmac.c" />
+    <None Include="hal\phydm\halrf\halphyrf_ap.c" />
+    <None Include="hal\phydm\halrf\halphyrf_iot.c" />
+    <None Include="hal\phydm\halrf\halphyrf_win.c" />
+    <None Include="hal\phydm\halrf\halrf_powertracking_ap.c" />
+    <None Include="hal\phydm\halrf\halrf_powertracking_iot.c" />
+    <None Include="hal\phydm\halrf\halrf_powertracking_win.c" />
+    <None Include="hal\phydm\halrf\halrf_txgapcal.c" />
+    <None Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ap.c" />
+    <None Include="hal\phydm\halrf\rtl8814a\halrf_8814a_win.c" />
+    <None Include="hal\phydm\phydm_powertracking_ap.c" />
+    <None Include="hal\phydm\phydm_powertracking_ce.c" />
+    <None Include="hal\phydm\phydm_powertracking_win.c" />
+    <None Include="hal\phydm\txbf\haltxbfjaguar.c" />
+    <None Include="os_dep\linux\custom_gpio_linux.c" />
+    <None Include="os_dep\linux\rhashtable.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1bd23cce-8aba-4fac-b3fe-aeb8d80f5932}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>rtl8814au_5_8_5_1</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+    <ProjectName>rtl8814au</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteCopyIncludeDirectories>/usr/include/;/usr/include/;/usr/src/linux-headers-5.15.0-kali2-amd64;/usr/src/linux-headers-5.15.0-kali2-common;/usr/src/linux-headers-5.15.0-kali3-amd64;/usr/src/linux-headers-5.15.0-kali3-common;/usr/src/linux-kbuild-5.15;/usr/src/linux-headers-5.10.0-kali7-amd64;/usr/src/linux-headers-5.10.0-kali7-common</RemoteCopyIncludeDirectories>
+    <RemoteCopyExcludeDirectories>
+    </RemoteCopyExcludeDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteCopyIncludeDirectories>/usr/include/;/usr/include/;/usr/src/linux-headers-5.15.0-kali2-amd64;/usr/src/linux-headers-5.15.0-kali2-common;/usr/src/linux-headers-5.15.0-kali3-amd64;/usr/src/linux-headers-5.15.0-kali3-common;/usr/src/linux-kbuild-5.15;/usr/src/linux-headers-5.10.0-kali7-amd64;/usr/src/linux-headers-5.10.0-kali7-common</RemoteCopyIncludeDirectories>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteBuildCommandLine>cd $(RemoteRootDir)/$(ProjectName)
+make</RemoteBuildCommandLine>
+    <NMakePreprocessorDefinitions>CONFIG_RTW_DEBUG;CONFIG_USB_HCI;CONFIG_RTW_DEBUG;CONFIG_AP_MODE;CONFIG_AP_WOWLAN;CONFIG_BR_EXT;CONFIG_CALIBRATE_TX_POWER_BY_REGULATORY;CONFIG_CALIBRATE_TX_POWER_TO_MAX;CONFIG_EFUSE_CONFIG_FILE;CONFIG_GPIO_WAKEUP;CONFIG_IEEE80211W;RTW_USE_CFG80211_STA_EVENT;CONFIG_LITTLE_ENDIAN;CONFIG_LOAD_PHY_PARA_FROM_FILE;CONFIG_MP_INCLUDED;CONFIG_MP_VHT_HW_TX_MODE;CONFIG_PNO_SET_DEBUG;CONFIG_PNO_SUPPORT;CONFIG_PROC_DEBUG;CONFIG_RTL8814A;CONFIG_RTW_ADAPTIVITY_EN=0;CONFIG_RTW_ADAPTIVITY_MODE=0;CONFIG_RTW_CHPLAN=0xFF;CONFIG_RTW_DEBUG;CONFIG_RTW_GRO;CONFIG_RTW_NAPI;CONFIG_RTW_NETIF_SG;CONFIG_RTW_ONE_PIN_GPIO;CONFIG_RTW_UP_MAPPING_RULE=0;CONFIG_TXPWR_BY_RATE=0;CONFIG_TXPWR_BY_RATE_EN=0;CONFIG_TXPWR_LIMIT=0;CONFIG_TXPWR_LIMIT_EN=0;CONFIG_WIFI_MONITOR;CONFIG_WOWLAN;RTW_WAKEUP_EVENT=0x7;DM_ODM_SUPPORT_TYPE=0x04;EFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_.map\";HIGH_ACTIVE_DEV2HST=0;HIGH_ACTIVE_HST2DEV=0;REALTEK_CONFIG_PATH=\"/lib/firmware/\";RTW_LOG_LEVEL=2;RTW_SUSPEND_TYPE=0;RTW_WOW_STA_MIX;WAKEUP_GPIO_IDX=default;WIFIMAC_PATH=\"/data/wifimac.txt\";</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>%userprofile%\AppData\Local\Microsoft\Linux\HeaderCache\1.0\1993893239\usr\src\linux-headers-5.10.0-kali7-amd64;%userprofile%\AppData\Local\Microsoft\Linux\HeaderCache\1.0\1993893239\usr\src\linux-headers-5.10.0-kali7-common\include\;include;platform;hal/btc;hal/phydm</NMakeIncludeSearchPath>
+    <RemoteReBuildCommandLine>cd $(RemoteRootDir)/$(ProjectName);rm -f *.o $(ProjectName)
+sudo dkms remove -m 8814au -v 5.8.5.1 --all
+sudo make dkms_install</RemoteReBuildCommandLine>
+    <RemoteCleanCommandLine>cd $(RemoteRootDir)/$(ProjectName);rm -f *.o $(ProjectName)</RemoteCleanCommandLine>
+    <BuildCommandLine>
+    </BuildCommandLine>
+    <IncrementalBuild>true</IncrementalBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

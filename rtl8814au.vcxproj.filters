@@ -1,0 +1,1387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="etc">
+      <UniqueIdentifier>{cc64e708-2177-49da-94fd-f88e83116f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{16b389eb-1dad-4e99-829b-f90ae844fdc1}</UniqueIdentifier>
+      <Extensions>*core\*</Extensions>
+    </Filter>
+    <Filter Include="hal">
+      <UniqueIdentifier>{2cd6dcaa-b2c8-494e-9f00-18bf73fc755e}</UniqueIdentifier>
+      <Extensions>*hal\*</Extensions>
+    </Filter>
+    <Filter Include="hal\led">
+      <UniqueIdentifier>{91bcf8eb-9814-4711-adea-74b8e09ab5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\hal_hci">
+      <UniqueIdentifier>{d78bf324-e8e0-4d8b-a0a2-5d92c2ff5098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\efuse">
+      <UniqueIdentifier>{4c47be97-37a3-45be-8604-c928fdc623c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\efuse\rtl8814a">
+      <UniqueIdentifier>{7817f29e-bccb-47eb-837a-a314a1174b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os_dep">
+      <UniqueIdentifier>{2376f33b-fc14-4caa-be52-f7b3db09a33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os_dep\linux">
+      <UniqueIdentifier>{c452ec91-e1cb-4e54-97ad-a99e02669542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{844fdd83-6d59-448a-a752-38d4309d67db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\mesh">
+      <UniqueIdentifier>{9c79b1d7-e6f3-4725-bed8-7b5a7d425ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\efuse">
+      <UniqueIdentifier>{8cb31c7d-617c-43c3-a60a-cb5a1d47a527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\rtl8814a">
+      <UniqueIdentifier>{09587608-c98a-4c70-a2ca-5922833fe23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\rtl8814a\usb">
+      <UniqueIdentifier>{019a7b92-a646-4b3e-9470-a6324f5a93a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\phydm">
+      <UniqueIdentifier>{b64e89f6-5a03-4e17-8a17-4d8a337a21b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\phydm\rtl8814a">
+      <UniqueIdentifier>{20eb85d3-b46a-4233-9df0-41d17bb0cc24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\phydm\halrf">
+      <UniqueIdentifier>{271a1409-26b3-4197-aae1-d1a2b1aa1bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\phydm\halrf\rtl8814a">
+      <UniqueIdentifier>{97bcb531-325f-48f8-80ca-e08222c0a3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hal\phydm\txbf">
+      <UniqueIdentifier>{97c6888b-3e82-41b5-9adf-43dcf6c0c31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{387e6fd5-802a-4f1e-8e8c-e49094f5f105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{8de30431-dfee-492d-acfc-6ddbfc5f521b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\header">
+      <UniqueIdentifier>{445f7119-dd58-4084-b0ec-95a7d0cf2fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\source">
+      <UniqueIdentifier>{3ab48ea4-2e71-4682-8a43-b7de8dedaec5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debian\changelog">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\changelog.in">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\compat">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\config">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\control">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\copyright">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="dkms.conf">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\dkms-sign-module">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="Kconfig">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="LICENSE">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="Makefile">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\one-time-setup">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="hal\phydm\ap_makefile.mk">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="build-deb.sh">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="hal\phydm\phydm.mk">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\rtl8814au-dkms.dkms">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\rules">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="hal\phydm\sd4_phydm_2_kernel.mk">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\sign-modules">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="debian\templates">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="core\rtw_chplan.c">
+      <Filter>core</Filter>
+    </None>
+    <None Include="include\gspi_ops_linux.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\rtl8814a\hal8814areg_odm.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\halhwimg.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\ieee80211_ext.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\mp_custom_oid.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\nic_spec.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_features_ce2_kernel.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_ap.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_ce.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_win.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="platform\platform_aml_s905_sdio.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="os_dep\linux\custom_gpio_linux.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\hal_halmac.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\efuse\rtl8814a\HalEfuseMask8814A_PCIE.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halphyrf_ap.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halphyrf_iot.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halphyrf_win.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ap.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\rtl8814a\halrf_8814a_win.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halrf_powertracking_ap.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halrf_powertracking_iot.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halrf_powertracking_win.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\halrf\halrf_txgapcal.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\txbf\haltxbfjaguar.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_ap.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_ce.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="hal\phydm\phydm_powertracking_win.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_aml_s905_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_arm_act_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_ARM_SUN50IW1P1_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_ARM_SUNnI_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_ARM_SUNxI_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_ARM_SUNxI_usb.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_ARM_WMT_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_hisilicon_hi3798_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_hisilicon_hi3798_sdio.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="platform\platform_zte_zx296716_sdio.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\rtw_bt_mp.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\rtw_mp_phy_regdef.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\rtw_sdio.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\linux\wireless.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\sdio_ops.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\sdio_ops_ce.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\sdio_ops_xp.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\byteorder\swabb.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="include\version_build.h">
+      <Filter>other\header</Filter>
+    </None>
+    <None Include="platform\platform_RTK_DMP_usb.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_sprd_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="platform\platform_zte_zx296716_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="os_dep\linux\rhashtable.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_bt_mp.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_eeprom.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_mem.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_sdio.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_wapi.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="core\rtw_wapi_sms4.c">
+      <Filter>other\source</Filter>
+    </None>
+    <None Include="include\sdio_hal.h">
+      <Filter>other\header</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hal\hal_btcoex.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_btcoex_wifionly.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_com.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_com_phycfg.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_dm.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_dm_acs.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_intf.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_mcc.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\led\hal_led.c">
+      <Filter>hal\led</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_hci\hal_usb.c">
+      <Filter>hal\hal_hci</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\led\hal_usb_led.c">
+      <Filter>hal\led</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_mp.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\hal_phy.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\Hal8814PwrSeq.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\txbf\halcomtxbf.c">
+      <Filter>hal\phydm\txbf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\efuse\rtl8814a\HalEfuseMask8814A_USB.c">
+      <Filter>hal\efuse\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\rtl8814a\halhwimg8814a_bb.c">
+      <Filter>hal\phydm\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\rtl8814a\halhwimg8814a_mac.c">
+      <Filter>hal\phydm\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\hal8814a_fw.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halhwimg8814a_rf.c">
+      <Filter>hal\phydm\halrf\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halrf_iqk_8814a.c">
+      <Filter>hal\phydm\halrf\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halphyrf_ce.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf_debug.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf_kfree.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf_powertracking.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\HalPwrSeqCmd.c">
+      <Filter>hal</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ce.c">
+      <Filter>hal\phydm\halrf\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf_powertracking_ce.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\halrf\halrf_psd.c">
+      <Filter>hal\phydm\halrf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\txbf\haltxbf8814a.c">
+      <Filter>hal\phydm\txbf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\txbf\haltxbfinterface.c">
+      <Filter>hal\phydm\txbf</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\txbf\phydm_hal_txbf_api.c">
+      <Filter>hal\phydm\txbf</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\ioctl_linux.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\ioctl_cfg80211.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\ioctl_mp.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\mlme_linux.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\os_intfs.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\osdep_service.c">
+      <Filter>os_dep</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_adaptivity.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_adc_sampling.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_antdect.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_antdiv.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_api.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_auto_dbg.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_beamforming.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_cck_pd.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_cck_rx_pathdiv.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_ccx.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_cfotracking.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_debug.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_dfs.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_dig.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_direct_bf.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_dynamictxpower.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_hwconfig.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_interface.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_lna_sat.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_math_lib.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_mp.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_noisemonitor.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_pathdiv.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_phystatus.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_pmac_tx_setting.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_pow_train.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_primary_cca.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_psd.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_rainfo.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_rssi_monitor.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_smt_ant.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\phydm_soml.c">
+      <Filter>hal\phydm</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\rtl8814a\phydm_regconfig8814a.c">
+      <Filter>hal\phydm\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\phydm\rtl8814a\phydm_rtl8814a.c">
+      <Filter>hal\phydm\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\platform_ops.c">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\recv_linux.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_cmd.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_dm.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_hal_init.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_phycfg.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_rf6052.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_rxdesc.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_sreset.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\rtl8814a_xmit.c">
+      <Filter>hal\rtl8814a</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_led.c">
+      <Filter>hal\rtl8814a\usb</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_recv.c">
+      <Filter>hal\rtl8814a\usb</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\usb\rtl8814au_xmit.c">
+      <Filter>hal\rtl8814a\usb</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\rtw_android.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\rtw_cfgvendor.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\rtw_proc.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\rtw_rhashtable.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\usb_intf.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\wifi_regd.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\xmit_linux.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_ap.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_beamforming.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_br_ext.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_btcoex.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_btcoex_wifionly.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_cmd.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_debug.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_ieee80211.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_io.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_ioctl_query.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_ioctl_set.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_iol.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_mi.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_mlme.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_mlme_ext.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_mp.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_odm.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_p2p.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_pwrctrl.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_recv.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_rf.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_rm.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_rm_fsm.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_rm_util.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mesh\rtw_mesh.c">
+      <Filter>core\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mesh\rtw_mesh_hwmp.c">
+      <Filter>core\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mesh\rtw_mesh_pathtbl.c">
+      <Filter>core\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_rson.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_security.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_sreset.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_sta_mgt.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_tdls.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_vht.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_wlan_util.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rtw_xmit.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\usb\usb_halinit.c">
+      <Filter>hal\rtl8814a\usb</Filter>
+    </ClCompile>
+    <ClCompile Include="hal\rtl8814a\usb\usb_ops_linux.c">
+      <Filter>hal\rtl8814a\usb</Filter>
+    </ClCompile>
+    <ClCompile Include="os_dep\linux\usb_ops_linux.c">
+      <Filter>os_dep\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="core\efuse\rtw_efuse.c">
+      <Filter>core\efuse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\basic_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\byteorder\big_endian.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\circ_buf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cmd_osdep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\custom_country_chplan.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\custom_gpio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_conf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_gspi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_pci.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_sdio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drv_types_xp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\efuse\efuse_mask.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ethernet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\byteorder\generic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gspi_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gspi_ops.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gspi_osintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\h2clbk.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_btcoex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_btcoex_wifionly.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_com.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\hal_com_c2h.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_com_h2c.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_com_led.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_com_phycfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_com_reg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_data.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\hal_dm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\hal_dm_acs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_gspi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\hal_halmac.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_ic_cfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_intf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_pg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_phy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_phy_reg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_sdio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hal_sdio_coex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\rtl8814a\hal8814a_fw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hal8814PhyCfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hal8814PhyReg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hal8814PwrSeq.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\halcomtxbf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\efuse\rtl8814a\HalEfuseMask8814A_PCIE.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\efuse\rtl8814a\HalEfuseMask8814A_USB.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\rtl8814a\halhwimg8814a_bb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\rtl8814a\halhwimg8814a_mac.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halhwimg8814a_rf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halphyrf_ap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halphyrf_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halphyrf_iot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halphyrf_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HalPwrSeqCmd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_8814a_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_dpk.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_features.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_iqk.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\halrf_iqk_8814a.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_kfree.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_ap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_iot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_powertracking_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_psd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\halrf_txgapcal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\haltxbf8192e.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\haltxbf8814a.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\haltxbf8822b.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\haltxbfinterface.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\haltxbfjaguar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HalVerDef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ieee80211.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\if_ether.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dep\linux\ioctl_cfg80211.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ip.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\byteorder\little_endian.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mlme_osdep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\mp_precomp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_intf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_service.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_service_bsd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_service_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_service_linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\osdep_service_xp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pci_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pci_ops.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pci_osintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_adaptivity.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_adc_sampling.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_antdect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_antdiv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_auto_dbg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_beamforming.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_cck_pd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_cck_rx_pathdiv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_ccx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_cfotracking.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_dfs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_dig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_direct_bf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_dynamictxpower.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_features.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_features_ap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_features_ce.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_features_iot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_features_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\txbf\phydm_hal_txbf_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_hwconfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_interface.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_lna_sat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_math_lib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_mp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_noisemonitor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_pathdiv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_phystatus.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_pmac_tx_setting.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_pow_train.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_pre_define.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_precomp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_primary_cca.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_psd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_rainfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_reg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\rtl8814a\phydm_regconfig8814a.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_regdefine11ac.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_regdefine11n.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_regtable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_rssi_monitor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\rtl8814a\phydm_rtl8814a.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_smt_ant.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_soml.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\phydm_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\platform_ops.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\recv_osdep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dep\linux\rhashtable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl_autoconf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_cmd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_dm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_led.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_recv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_rf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_spec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_sreset.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814a_xmit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814b_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814be_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtl8814bu_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_android.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_ap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_beamforming.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_br_ext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_btcoex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_btcoex_wifionly.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_byteorder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dep\linux\rtw_cfgvendor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rtw_chplan.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_cmd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_eeprom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_efuse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_ht.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_ioctl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_ioctl_query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_ioctl_set.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_iol.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mcc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="core\mesh\rtw_mesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="core\mesh\rtw_mesh_hwmp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="core\mesh\rtw_mesh_pathtbl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mlme.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mlme_ext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_mp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_odm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_p2p.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dep\linux\rtw_proc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_pwrctrl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_qos.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_recv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_rf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dep\linux\rtw_rhashtable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_rm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_rm_fsm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_rm_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_rson.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_security.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_sreset.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cmn_info\rtw_sta_info.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_tdls.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_vht.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_wapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_wifi_regd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtw_xmit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sdio_ops_linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sdio_osintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sta_info.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\byteorder\swab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\usb_hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\usb_ops.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\usb_ops_linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\usb_osintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\usb_vendor_req.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\rtl8814a\version_rtl8814a.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\phydm\halrf\rtl8814a\version_rtl8814a_rf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wifi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wlan_bssdef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xmit_osdep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
