@@ -503,9 +503,9 @@
 make</RemoteBuildCommandLine>
     <NMakePreprocessorDefinitions>CONFIG_RTW_DEBUG;CONFIG_USB_HCI;CONFIG_RTW_DEBUG;CONFIG_AP_MODE;CONFIG_AP_WOWLAN;CONFIG_BR_EXT;CONFIG_CALIBRATE_TX_POWER_BY_REGULATORY;CONFIG_CALIBRATE_TX_POWER_TO_MAX;CONFIG_EFUSE_CONFIG_FILE;CONFIG_GPIO_WAKEUP;CONFIG_IEEE80211W;RTW_USE_CFG80211_STA_EVENT;CONFIG_LITTLE_ENDIAN;CONFIG_LOAD_PHY_PARA_FROM_FILE;CONFIG_MP_INCLUDED;CONFIG_MP_VHT_HW_TX_MODE;CONFIG_PNO_SET_DEBUG;CONFIG_PNO_SUPPORT;CONFIG_PROC_DEBUG;CONFIG_RTL8814A;CONFIG_RTW_ADAPTIVITY_EN=0;CONFIG_RTW_ADAPTIVITY_MODE=0;CONFIG_RTW_CHPLAN=0xFF;CONFIG_RTW_DEBUG;CONFIG_RTW_GRO;CONFIG_RTW_NAPI;CONFIG_RTW_NETIF_SG;CONFIG_RTW_ONE_PIN_GPIO;CONFIG_RTW_UP_MAPPING_RULE=0;CONFIG_TXPWR_BY_RATE=0;CONFIG_TXPWR_BY_RATE_EN=0;CONFIG_TXPWR_LIMIT=0;CONFIG_TXPWR_LIMIT_EN=0;CONFIG_WIFI_MONITOR;CONFIG_WOWLAN;RTW_WAKEUP_EVENT=0x7;DM_ODM_SUPPORT_TYPE=0x04;EFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_.map\";HIGH_ACTIVE_DEV2HST=0;HIGH_ACTIVE_HST2DEV=0;REALTEK_CONFIG_PATH=\"/lib/firmware/\";RTW_LOG_LEVEL=2;RTW_SUSPEND_TYPE=0;RTW_WOW_STA_MIX;WAKEUP_GPIO_IDX=default;WIFIMAC_PATH=\"/data/wifimac.txt\";</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath>%userprofile%\AppData\Local\Microsoft\Linux\HeaderCache\1.0\1993893239\usr\src\linux-headers-5.10.0-kali7-amd64;%userprofile%\AppData\Local\Microsoft\Linux\HeaderCache\1.0\1993893239\usr\src\linux-headers-5.10.0-kali7-common\include\;include;platform;hal/btc;hal/phydm</NMakeIncludeSearchPath>
-    <RemoteReBuildCommandLine>cd $(RemoteRootDir)/$(ProjectName);rm -f *.o $(ProjectName)
-sudo dkms remove -m 8814au -v 5.8.5.1 --all
-sudo make dkms_install</RemoteReBuildCommandLine>
+    <RemoteReBuildCommandLine>cd $(RemoteRootDir)/$(ProjectName);
+rm -f *.o $(ProjectName)
+make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>cd $(RemoteRootDir)/$(ProjectName);rm -f *.o $(ProjectName)</RemoteCleanCommandLine>
     <BuildCommandLine>
     </BuildCommandLine>
